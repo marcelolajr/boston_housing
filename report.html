@@ -13247,9 +13247,9 @@ QmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> max_depth = 1. High vies and we are considering few features for our dataset..
-1) The test set curve tends to stay almost the same for all the path(except the begining)
-2) The training set tends to become more acurate as we train more and more data.
-3) Probably not, since on 300 training point the curve already found a optimal point, seeing the distance from training curve and test curve.</p>
+1) The test set curve tends to stay almost the same for all the path, because the curve frm the training score is descending and the curve from the testing score is ascending.
+2) The training set tends to become more acurate as we train more and more data, until 300. (Plato state)
+3) Probably not, since on 300 training point the curve already found a optimal point, seeing the distance from training curve and test curve. (Plato state)</p>
 
 </div>
 </div>
@@ -13796,15 +13796,6 @@ MaZVscRnjDGmVbHEZ4wxplWxxGeMMaZVscRnjDGmVfn/MJOoZGq7qy8AAAAASUVORK5CYII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 It's a way to analyse multiple combinations of hyperparameters, doing cross-validation in the process, and then determines which fit gives the best performace. It can work through various combinations only with a few lines of code. The way of searching is by exhaustively trying the combinations of parameters.</p>
-<p>A short introduction about the matter:
-Know as estimators, they use hyper-parameters that are not learnt from the estimators. With this estimator "is possible and recommended to search the hyper-parameter space for the best Cross-validation: evaluating estimator performance score."(from scikit-learn documentation)
-Examples of hyper-parameters are: C, kernel and gamma</p>
-<p>A grid search consists in(from scikit-learn documentation): 
--an estimator
--a parameter space
--a method for sampling candidates
--a cross-validatio scheme
--a score function</p>
 
 </div>
 </div>
