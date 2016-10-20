@@ -13247,9 +13247,10 @@ QmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> max_depth = 1. High vies and we are considering few features for our dataset..
-1) The test set curve tends to stay almost the same for all the path, because the curve frm the training score is descending and the curve from the testing score is ascending.
-2) The training set tends to become more acurate as we train more and more data, until 300. (Plato state)
-3) Probably not, since on 300 training point the curve already found a optimal point, seeing the distance from training curve and test curve. (Plato state)</p>
+1) At first, the training curve and the test curve suffers a greatly variation because of the initial input of the data.
+2) After that, the curves starts to get close to each other, the curve from the training score is descending and the curve from the testing score is ascending. 
+3) The training set tends to become more acurate as we train more and more data, until 300. In 300, the training set gets an ideal state, if we train more data than this, we'll probably dont get better results, and the curve will enter a Plato State. 
+4) Probably not, since on 300 training point the curve already found a optimal point, seeing the distance from training curve and test curve. (Plato state)</p>
 
 </div>
 </div>
@@ -13819,7 +13820,7 @@ It's a way to analyse multiple combinations of hyperparameters, doing cross-vali
 <p><strong>Answer: </strong> The K-fold cross-validation training technique consists in splitting the data in k buckets to be selected as training/test sets. It provides a better way to test the models through the parameters passed, because the data is segmented.
 This way, suppose i'm doing a 5-fold validation for a dataset of 100000, each bucket will have 20000 data that will be used each at a time as a test set, using the rest 80000 data as the training set. This way we'll be able to use all the data as training set and test set.</p>
 <p>What benefit does this technique provide for grid search when optimizing a model?
-So the gridSearch can tests the differentes schemes and return the best result for the K tests.</p>
+So the gridSearch can tests the differentes schemes and return the best result for the K tests. The crucial point here is that we'll be able to test all data as training and test set, training the different possibilities separating the buckets, as it is explained above.</p>
 
 </div>
 </div>
